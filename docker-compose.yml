@@ -4,7 +4,7 @@ services:
   refurbed-invoices:
     build: .
     restart: unless-stopped
-    container_name: ${STACK_NAME}_APP
+    container_name: ${STACK_NAME}
     environment:
       - SHOP=${SHOP}
       - SHOPIFY_TOKEN=${SHOPIFY_TOKEN}

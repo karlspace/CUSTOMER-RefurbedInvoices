@@ -1,9 +1,14 @@
-version: '3.8'
+version: "3.8"
 
 services:
   refurbed-invoices:
     build: .
-    container_name: refurbed-invoices
-    env_file:
-      - .env
     restart: unless-stopped
+    container_name: ${STACK_NAME}_APP
+    environment:
+      - SHOP=${SHOP}
+      - SHOPIFY_TOKEN=${SHOPIFY_TOKEN}
+      - REFURBED_TOKEN=${REFURBED_TOKEN}
+      - IMAP_SERVER=${IMAP_SERVER}
+      - IMAP_USERNAME=${IMAP_USERNAME}
+      - IMAP_PASSWORD=${IMAP_PASSWORD}

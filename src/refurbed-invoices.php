@@ -37,6 +37,8 @@ if (!is_dir($saveDir)) {
 // Main
 // ---------------------------------------------------------------------------
 
+logInfo("Refurbed Invoice Processor started");
+
 $inbox = imap_open($imapServer, $imapUsername, $imapPassword);
 if (!$inbox) {
     logError('Cannot connect to IMAP server');

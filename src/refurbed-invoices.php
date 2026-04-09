@@ -178,7 +178,7 @@ function uploadWithRetry(string $savePath, string $refurbedId, string $refurbedT
 
 function extractOrderId(string $subject): ?string
 {
-    if (preg_match('/\b\d{5,10}\b/', $subject, $matches)) {
+    if (preg_match('/\d{5,10}/', $subject, $matches)) {
         return $matches[0];
     }
 

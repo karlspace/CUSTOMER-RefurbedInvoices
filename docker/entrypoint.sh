@@ -8,4 +8,6 @@ printenv > "$ENV_FILE"
 chown appuser:appuser "$ENV_FILE"
 chmod 0600 "$ENV_FILE"
 
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INFO] Container started — cron scheduled hourly"
+
 exec cron -f

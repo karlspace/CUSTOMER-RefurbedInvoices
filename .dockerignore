@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+*.md
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+src/invoices/

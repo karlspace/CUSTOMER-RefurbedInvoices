@@ -1,2 +1,24 @@
-/.idea
+# Environment
 .env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Runtime
+src/invoices/
+*.log
+
+# PHP
+vendor/
+composer.lock

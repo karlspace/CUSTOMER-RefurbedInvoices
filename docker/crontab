@@ -1,1 +1,0 @@
-0 * * * * appuser . /app/.env.runtime && php /app/refurbed-invoices.php >> /proc/1/fd/1 2>&1
